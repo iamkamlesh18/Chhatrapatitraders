@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://iamkamlesh18.github.io/chhatrapatitraders",
+  "homepage": "https://iamkamlesh18.github.io/Chhatrapatitraders",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
