@@ -1,9 +1,20 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Products from "./components/Products";
+import WhyUs from "./components/WhyUs";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div>
-      <h1>छत्रपती ट्रेडर्स – Dharangaon</h1>
-      <p>Construction Material & Hardware Supplier</p>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Products />
+      <WhyUs />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
