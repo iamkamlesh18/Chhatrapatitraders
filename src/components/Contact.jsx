@@ -1,23 +1,23 @@
 const Contact = () => (
-  <section style={{ padding: "30px 20px" }}>
-    <h2>संपर्क करा</h2>
-    <p>📍 Dharangaon, Jalgaon</p>
-    <p>📞 77750 74617 / 94239 37020</p>
+  <section className="fade-right" style={{ textAlign: "center" }}>
+    <h2>संपर्क साधा</h2>
+
+    <p style={{ marginTop: "20px" }}>
+      📍 Dharangaon, Jalgaon<br />
+      📞 77750 74617 / 94239 37020
+    </p>
+
+    <p style={{ opacity: 0.7, marginTop: "12px" }}>
+      स्थापनाः 2026 | विश्वासाने व्यवसाय
+    </p>
 
     <a
-      href="https://forms.gle/YOUR_GOOGLE_FORM_LINK"
+      href="https://wa.me/917775074617?text=नमस्कार,%20मला%20संपूर्ण%20माहिती%20हवी%20आहे."
       target="_blank"
-      style={{
-        display: "inline-block",
-        marginTop: "10px",
-        background: "#1E88E5",
-        color: "#fff",
-        padding: "10px 16px",
-        borderRadius: "6px",
-        textDecoration: "none"
-      }}
+      className="cta"
+      style={{ marginTop: "30px" }}
     >
-      Price Enquiry Form
+      सामान्य चौकशी (WhatsApp)
     </a>
   </section>
 );

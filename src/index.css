@@ -2,10 +2,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 body {
-  background-color: #ffffff;
-  color: #2e2e2e;
+  font-family: Inter, system-ui, sans-serif;
+  color: #1f2933;
+  line-height: 1.8;
+
+  /* Gradient canvas */
+  background: linear-gradient(
+    160deg,
+    #fdf6ec 0%,
+    #f6ebdd 30%,
+    #e6f0ee 60%,
+    #eef4f3 100%
+  );
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 100px 20px;
+}
+
+/* ---------- Glass Card ---------- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ---------- Animations ---------- */
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-left {
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+.fade-right {
+  animation: fadeRight 0.8s ease forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ---------- Buttons ---------- */
+.cta {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(135deg, #0f766e, #134e4a);
+  color: #fff;
 }
